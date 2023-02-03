@@ -134,6 +134,7 @@
   color: gray;
   opacity: 0.8;
   line-height: 1.75rem;
+  font-size: 1.125rem;
 }
 
 @media (max-width: 1024px) {
