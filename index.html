@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <title>서린&서준이의 첫 생일♥</title>
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+<!-- wrap [s] -->
+<div id="wrap">
+
+    <main id = "container" class= "main-cont">
+        <!-- sectionMain [s] -->
+        <section class = "main-section" id="sectionMain">
+            <div class="inner">
+                <div class="contents">
+                    <p class="bp">b&nbsp;&nbsp;i&nbsp;&nbsp;r&nbsp;&nbsp;t&nbsp;&nbsp;h&nbsp;&nbsp;d&nbsp;&nbsp;a&nbsp;&nbsp;y&nbsp;&nbsp;&nbsp;p&nbsp;&nbsp;a&nbsp;&nbsp;r&nbsp;&nbsp;t&nbsp;&nbsp;y</p>
+                    <h1 class="tit"><span class="name">서린 & 서준</span><br>
+                     첫 번째 생일<span class="heart">♥</span>
+                    </h1>
+                    <p class="d-day"></p>
+                    <img class="sjsr-img" src="./img/sjsr1.png" alt="서준서린1">
+                    <div class="cont-txt">
+                        <h3 class="tit-sub">/모 시 는 글/</h3>
+                        <p class="txt">세상에서 가장 큰 선물로<br>
+                            저희에게 온 서린&서준이가<br>
+                            건강하게 자라서<br>
+                            첫돌을 맞이하게 되었습니다.<br>
+                            더욱 더 건강하고 예쁘게 자랄 수 있도록<br>
+                            함께 축하해주세요♥
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sectionMain [e] -->
+    </main>
+<!-- wrap [e] -->
+
+<!-- info popup[s] -->
+<div class="modal-container">
+    <div class="pop-wrap" id="info-pop">
+        <div class="infopop">
+            <div class="pop-cont">
+                <div class="pop-head">
+                    <p class="pop-txt">TEST입니다.</p>
+                    <button class="pop-close-btn">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- info popup[e] -->
+
+<!-- script [s]-->
+<script src="js/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+
+// // pc & mo swiper control
+// let ww = $(window).width();
+// let dofslide = undefined;
+// let dofslidemo = undefined;
+
+// // dofswiper [s]
+// function dofSwiper() {
+//   if (ww > 1024 && dofslide == undefined) {
+//     dofslide = new Swiper(".main-swiper", {
+//         slidesPerView: 3,
+//         loop: true,
+//         pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//         },
+//         navigation: {
+//                 nextEl: ".swiper-button-next",
+//                 prevEl: ".swiper-button-prev",
+//         },
+//     });
+//   } else {
+//     dofslidemo = new Swiper(".main-swiper", {
+//         centeredSlides: true,
+//         slidesPerView: 1,
+//         spaceBetween: 20,
+//         loop: true,
+//         pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//         },
+//         navigation: {
+//                 nextEl: ".swiper-button-next",
+//                 prevEl: ".swiper-button-prev",
+//         },
+//     });
+//   }
+// }
+// dofSwiper();
+
+// $(window).on('resize', function () {
+//   ww = $(window).width();
+//   dofSwiper();
+// });
+
+// // onload
+// window.addEventListener('load', function(event) {
+// dofswiper()
+// }, true);
+
+// //onresize
+// window.addEventListener('resize', function(event) {
+// dofswiper()
+// }, true);
+
+// // onscroll
+// window.addEventListener('scroll', function(event) {
+// dofswiper()
+// }, true);
+
+// popup
+function popupControl() {
+    $(".popup-open").on('click', function () {
+        const popId = $(this).data('popup');
+        $("#"+popId).css('display', 'flex').hide().fadeIn('fast');
+        console.log(popId);
+    });
+    $(".pop-close-btn").on('click', function () {
+        $(this).parents('.pop-wrap').fadeOut();
+    });
+};
+popupControl();
+
+</script>
+<!-- script [e]-->
+
+</body>
+</html>

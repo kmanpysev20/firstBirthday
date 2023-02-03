@@ -1,0 +1,47 @@
+#sectionMain {
+    .bp {
+        opacity: 0.2;
+        margin-bottom: rem(40);
+        color:black;
+    }
+    .tit {
+        font-size: rem(56);
+        font-weight: 600;
+        line-height: rem(80);
+        color:black;
+        opacity: 0.9;
+        margin-bottom: rem(20);
+        .name {
+            color: orange;
+            font-weight: bold;
+        }
+        .heart {
+            color:red;
+        }
+    }
+    .d-day {
+        font-size: rem(20);
+        font-weight: 600;
+        color:black;
+        opacity: 0.7;
+        margin-bottom: rem(40);
+    }
+    .sjsr-img {
+        margin-bottom: rem(40);
+    }
+    .cont-txt {
+        padding: rem(0) rem(40);
+        .tit-sub {
+            color:orange;
+            opacity: 0.6;
+            font-size: rem(24);
+            font-weight: bold;
+            margin-bottom: rem(40);
+        }
+        .txt {
+            color: gray;
+            opacity: 0.8;
+            line-height: rem(28);
+        }
+    }
+}
